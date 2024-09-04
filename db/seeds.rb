@@ -9,3 +9,8 @@
 #   end
 user = User.where(email: 'admin@local.com').first_or_initialize
 user.update!(password: 'password', password_confirmation: 'password')
+
+# 100.times do |i|
+#  BlogPost.create title: "Blog Post #{i}", content: "Hello world!", published_at: Time.current
+# end
+# BlogPost.where(published_at: nil).update_all(published_at: Time.current); 
