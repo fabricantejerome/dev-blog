@@ -18,4 +18,8 @@
 <% end %>
 
 
+<% if @pagy.count > 20 %>
     <%== pagy_nav(@pagy) if @pagy.pages > 1 %>
+<% end %>
+
+
